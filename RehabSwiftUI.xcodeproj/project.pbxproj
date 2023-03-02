@@ -43,7 +43,6 @@
 				ADFE3C770C048C7CA908605C /* Pods-RehabSwiftUI.debug.xcconfig */,
 				867BFFC9855A94E456BDA972 /* Pods-RehabSwiftUI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -104,6 +103,7 @@
 				3B64BA3829B0C11D00B774B5 /* Frameworks */,
 				3B64BA3929B0C11D00B774B5 /* Resources */,
 				D4D2C658643F7A0869804E62 /* [CP] Embed Pods Frameworks */,
+				3B0EF28529B0C64500724AD1 /* Run SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -160,6 +160,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3B0EF28529B0C64500724AD1 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n  \"${PODS_ROOT}/SwiftLint/swiftlint\"\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		5D687B67B14985A13726570A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
