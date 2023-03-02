@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C71B60935BDDB782FE2DD5F /* Pods_RehabSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C097FFB2D9FC69C598FDD4A /* Pods_RehabSwiftUI.framework */; };
 		3B64BA3F29B0C11D00B774B5 /* RehabSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64BA3E29B0C11D00B774B5 /* RehabSwiftUIApp.swift */; };
 		3B64BA4129B0C11D00B774B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64BA4029B0C11D00B774B5 /* ContentView.swift */; };
 		3B64BA4329B0C11E00B774B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B64BA4229B0C11E00B774B5 /* Assets.xcassets */; };
@@ -19,6 +20,9 @@
 		3B64BA4029B0C11D00B774B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B64BA4229B0C11E00B774B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B64BA4529B0C11E00B774B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		867BFFC9855A94E456BDA972 /* Pods-RehabSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RehabSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-RehabSwiftUI/Pods-RehabSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		9C097FFB2D9FC69C598FDD4A /* Pods_RehabSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RehabSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFE3C770C048C7CA908605C /* Pods-RehabSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RehabSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-RehabSwiftUI/Pods-RehabSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C71B60935BDDB782FE2DD5F /* Pods_RehabSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09BE2812BFE5FB26FB0CF550 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADFE3C770C048C7CA908605C /* Pods-RehabSwiftUI.debug.xcconfig */,
+				867BFFC9855A94E456BDA972 /* Pods-RehabSwiftUI.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		3B64BA3229B0C11D00B774B5 = {
 			isa = PBXGroup;
 			children = (
 				3B64BA3D29B0C11D00B774B5 /* RehabSwiftUI */,
 				3B64BA3C29B0C11D00B774B5 /* Products */,
+				09BE2812BFE5FB26FB0CF550 /* Pods */,
+				69A23A921FC6C724CE67B861 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		69A23A921FC6C724CE67B861 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C097FFB2D9FC69C598FDD4A /* Pods_RehabSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B64BA4929B0C11E00B774B5 /* Build configuration list for PBXNativeTarget "RehabSwiftUI" */;
 			buildPhases = (
+				5D687B67B14985A13726570A /* [CP] Check Pods Manifest.lock */,
 				3B64BA3729B0C11D00B774B5 /* Sources */,
 				3B64BA3829B0C11D00B774B5 /* Frameworks */,
 				3B64BA3929B0C11D00B774B5 /* Resources */,
+				D4D2C658643F7A0869804E62 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5D687B67B14985A13726570A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RehabSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4D2C658643F7A0869804E62 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RehabSwiftUI/Pods-RehabSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RehabSwiftUI/Pods-RehabSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RehabSwiftUI/Pods-RehabSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3B64BA3729B0C11D00B774B5 /* Sources */ = {
@@ -261,6 +330,7 @@
 		};
 		3B64BA4A29B0C11E00B774B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADFE3C770C048C7CA908605C /* Pods-RehabSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +360,7 @@
 		};
 		3B64BA4B29B0C11E00B774B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 867BFFC9855A94E456BDA972 /* Pods-RehabSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

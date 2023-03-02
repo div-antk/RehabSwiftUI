@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (5.6.4)
+  - Instantiate (4.0.0)
+  - InstantiateStandard (4.0.0):
+    - Instantiate (~> 4.0)
+  - Kingfisher (7.6.2)
+  - SwiftLint (0.50.3)
+
+DEPENDENCIES:
+  - Alamofire
+  - Instantiate
+  - InstantiateStandard
+  - Kingfisher
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Instantiate
+    - InstantiateStandard
+    - Kingfisher
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Instantiate: 62516e7dde448721c1f5815a9ee7e0669d034d52
+  InstantiateStandard: 18ab1417ba787113350c71a5b2251f0b4448be67
+  Kingfisher: 6c5449c6450c5239166510ba04afe374a98afc4f
+  SwiftLint: 77f7cb2b9bb81ab4a12fcc86448ba3f11afa50c6
+
+PODFILE CHECKSUM: acfcd3e59bacb598e9c6a995ccdb49114e4ff4cd
+
+COCOAPODS: 1.12.0
