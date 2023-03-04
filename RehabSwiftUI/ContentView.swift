@@ -16,12 +16,21 @@ struct ContentView: View {
                     .foregroundColor(.accentColor)
                 Text("Name")
                     .font(.system(size: 16, weight: .bold))
+                Spacer()
             }
+            .padding(.top, 20)
+            .padding(.leading, 16)
             Text("time")
+                .padding(.top, 0.4)
+                .padding(.leading, 16)
             Text("Title")
                 .font(.system(size: 20, weight: .bold))
-                .padding(.top, 1)
+                .padding(.top, 4)
+                .padding(.leading, 16)
+                .padding(.bottom, 20)
         }
+        .border(Color.black, width: 1)
+        .padding(.all, 20)
     }
 }
 
