@@ -29,7 +29,12 @@ struct ContentView: View {
                 .padding(.leading, 16)
                 .padding(.bottom, 20)
         }
-        .border(Color.black, width: 1)
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .stroke(
+                    Color.green,
+                    style: StrokeStyle(lineWidth: 2))
+        )
         .padding(.all, 20)
     }
 }
