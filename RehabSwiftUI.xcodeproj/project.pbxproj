@@ -12,6 +12,7 @@
 		3B64BA4129B0C11D00B774B5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B64BA4029B0C11D00B774B5 /* ContentView.swift */; };
 		3B64BA4329B0C11E00B774B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B64BA4229B0C11E00B774B5 /* Assets.xcassets */; };
 		3B64BA4629B0C11E00B774B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B64BA4529B0C11E00B774B5 /* Preview Assets.xcassets */; };
+		3BCD65CD29B61CCE006CBC23 /* MainArticleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD65CC29B61CCE006CBC23 /* MainArticleListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		3B64BA4029B0C11D00B774B5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B64BA4229B0C11E00B774B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B64BA4529B0C11E00B774B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BCD65CC29B61CCE006CBC23 /* MainArticleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticleListCell.swift; sourceTree = "<group>"; };
 		867BFFC9855A94E456BDA972 /* Pods-RehabSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RehabSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-RehabSwiftUI/Pods-RehabSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		9C097FFB2D9FC69C598FDD4A /* Pods_RehabSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RehabSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADFE3C770C048C7CA908605C /* Pods-RehabSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RehabSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-RehabSwiftUI/Pods-RehabSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			children = (
 				3B64BA3E29B0C11D00B774B5 /* RehabSwiftUIApp.swift */,
 				3B64BA4029B0C11D00B774B5 /* ContentView.swift */,
+				3BCD65CB29B61CA0006CBC23 /* ViewComponents */,
 				3B64BA4229B0C11E00B774B5 /* Assets.xcassets */,
 				3B64BA4429B0C11E00B774B5 /* Preview Content */,
 			);
@@ -81,6 +84,14 @@
 				3B64BA4529B0C11E00B774B5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3BCD65CB29B61CA0006CBC23 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3BCD65CC29B61CCE006CBC23 /* MainArticleListCell.swift */,
+			);
+			path = ViewComponents;
 			sourceTree = "<group>";
 		};
 		69A23A921FC6C724CE67B861 /* Frameworks */ = {
@@ -225,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B64BA4129B0C11D00B774B5 /* ContentView.swift in Sources */,
+				3BCD65CD29B61CCE006CBC23 /* MainArticleListCell.swift in Sources */,
 				3B64BA3F29B0C11D00B774B5 /* RehabSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
