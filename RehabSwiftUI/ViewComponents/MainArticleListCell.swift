@@ -32,8 +32,8 @@ struct MainArticleListCell: View {
         .overlay(
             RoundedRectangle(cornerRadius: 16)
                 .stroke(
-                    Color.green,
-                    style: StrokeStyle(lineWidth: 2))
+                    Color.white
+                )
         )
         .padding(.all, 20)
     }

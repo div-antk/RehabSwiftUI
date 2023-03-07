@@ -9,9 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Color.green
-            .opacity(0.5)
-            .edgesIgnoringSafeArea(.all)
+        ZStack {
+            Color.green
+//                .opacity(0.5)
+                .edgesIgnoringSafeArea(.all)
+            VStack(spacing: 24) {
+                ScrollView {
+                    MainArticleListCell()
+                    MainArticleListCell()
+                    MainArticleListCell()
+                    MainArticleListCell()
+                    MainArticleListCell()
+                }
+            }
+        }
     }
 }
 
