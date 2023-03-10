@@ -14,6 +14,7 @@
 		3B64BA4629B0C11E00B774B5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B64BA4529B0C11E00B774B5 /* Preview Assets.xcassets */; };
 		3BC0B6E129BF4F7C00307E91 /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B6E029BF4F7C00307E91 /* QiitaAPI.swift */; };
 		3BC0B6E429BF50D200307E91 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B6E329BF50D200307E91 /* ArticleModel.swift */; };
+		3BC0B6E729BF52CB00307E91 /* APIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC0B6E629BF52CB00307E91 /* APIConst.swift */; };
 		3BCD65CD29B61CCE006CBC23 /* MainArticleListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCD65CC29B61CCE006CBC23 /* MainArticleListCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		3B64BA4529B0C11E00B774B5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BC0B6E029BF4F7C00307E91 /* QiitaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
 		3BC0B6E329BF50D200307E91 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		3BC0B6E629BF52CB00307E91 /* APIConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConst.swift; sourceTree = "<group>"; };
 		3BCD65CC29B61CCE006CBC23 /* MainArticleListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainArticleListCell.swift; sourceTree = "<group>"; };
 		867BFFC9855A94E456BDA972 /* Pods-RehabSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RehabSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-RehabSwiftUI/Pods-RehabSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		9C097FFB2D9FC69C598FDD4A /* Pods_RehabSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RehabSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +77,7 @@
 			children = (
 				3B64BA3E29B0C11D00B774B5 /* RehabSwiftUIApp.swift */,
 				3BC0B6E029BF4F7C00307E91 /* QiitaAPI.swift */,
+				3BC0B6E529BF52AA00307E91 /* Service */,
 				3BC0B6E229BF50BB00307E91 /* Model */,
 				3B64BA4029B0C11D00B774B5 /* ContentView.swift */,
 				3BCD65CB29B61CA0006CBC23 /* ViewComponents */,
@@ -98,6 +101,14 @@
 				3BC0B6E329BF50D200307E91 /* ArticleModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3BC0B6E529BF52AA00307E91 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3BC0B6E629BF52CB00307E91 /* APIConst.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		3BCD65CB29B61CA0006CBC23 /* ViewComponents */ = {
@@ -249,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC0B6E729BF52CB00307E91 /* APIConst.swift in Sources */,
 				3B64BA4129B0C11D00B774B5 /* ContentView.swift in Sources */,
 				3BC0B6E429BF50D200307E91 /* ArticleModel.swift in Sources */,
 				3BCD65CD29B61CCE006CBC23 /* MainArticleListCell.swift in Sources */,
