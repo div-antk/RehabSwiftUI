@@ -10,7 +10,7 @@ import Combine
 import Alamofire
 
 protocol APIServiceProtocol {
-    func fetchPoems(searchTerm: String) -> AnyPublisher<DataResponse<[Article], NetworkError>, Never>
+    func fetchArticle(searchTerm: String) -> AnyPublisher<DataResponse<[Article], NetworkError>, Never>
 }
 
 final class APIService {
@@ -19,7 +19,7 @@ final class APIService {
 }
 
 extension APIService: APIServiceProtocol {
-    func fetchPoems(searchTerm: String) -> AnyPublisher<DataResponse<[Article], NetworkError>, Never> {
+    func fetchArticle(searchTerm: String) -> AnyPublisher<DataResponse<[Article], NetworkError>, Never> {
         
         let urlString: String = APIConst.api + "\(searchTerm)"
         let url = URL(string: urlString)!

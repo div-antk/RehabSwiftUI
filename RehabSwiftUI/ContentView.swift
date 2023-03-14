@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var text = ""
+    
     var body: some View {
         ZStack {
             Color.green
 //                .opacity(0.5)
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 24) {
+                TextField("入力しなさい", text: $text)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding(.horizontal, 24)
                 ScrollView {
                     MainArticleListCell()
                     MainArticleListCell()
